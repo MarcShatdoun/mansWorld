@@ -1,0 +1,29 @@
+<%- include('templates/head') %>
+<body class="login">
+
+    <form action="/register" method="post" class="width-container">
+        <fieldset>
+        <legend>Register</legend>
+        <div>
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div>
+            <label for="lastname">Apellido</label>
+            <input type="text" name="lastname" id="lastanme">
+        </div>
+        <div>
+            <label for="correo">Correo</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="password">Contraseña</label>
+            <input type="password" name="password" id="password">
+        </div>
+            
+        <input type="submit" value="Registrarse">
+        <span>¿Ya tienes cuenta?  <a href="/login">Login</a></span>
+        </fieldset>
+        
+    </form>
+</body>

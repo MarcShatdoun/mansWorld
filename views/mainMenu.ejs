@@ -1,0 +1,104 @@
+<%- include('templates/head') %>
+<body>
+    
+<%- include('templates/nav') %>
+<header id="header">
+    <h1></h1>
+    <img src="media/img/1360x650.png" alt="" loading="eager">
+</header>
+
+<main class="width-container ">
+    <h2>Productos</h2>
+    <p>Lorem ipsum dolor sit.</p>
+    <div class="content-grid-2">
+        <article>
+            <div class="relative-container">
+                <h3> Titulo </h3>
+                <p>Lorem ipsum dolor sit.</p>
+                <img src="media/img/500x300.png" alt="" loading="lazy">
+            </div>
+            <button>CIA</button>
+        </article>
+        <article>
+            <div class="relative-container">
+                <h3> Titulo </h3>
+                <p>Lorem ipsum dolor sit.</p>
+                <img src="media/img/500x300.png" alt="" loading="lazy">
+            </div>
+            <button>CIA</button>
+        </article>
+        <article>
+            <div class="relative-container">
+                <h3> Titulo </h3>
+                <p>Lorem ipsum dolor sit.</p>
+                <img src="media/img/500x300.png" alt="" loading="lazy">
+            </div>
+            <button>CIA</button>
+        </article>
+  
+        <article>
+            <div class="relative-container">
+                <h3> Titulo </h3>
+                <p>Lorem ipsum dolor sit.</p>
+                <img src="media/img/500x300.png" alt="" loading="lazy">
+            </div>
+            <button>CIA</button>
+        </article>
+        <article>
+            <div class="relative-container">
+                <h3> Titulo </h3>
+                <p>Lorem ipsum dolor sit.</p>
+                <img src="media/img/500x300.png" alt="" loading="lazy">
+            </div>
+            <button>CIA</button>
+        </article>
+        <article>
+            <div class="relative-container">
+                <h3> Titulo </h3>
+                <p>Lorem ipsum dolor sit.</p>
+                <img src="media/img/500x300.png" alt="" loading="lazy">
+            </div>
+            <button>CIA</button>
+        </article>
+    </div>
+</main>
+
+<section class="width-container ">
+    <div class="example-prduct">
+        <img src="media/img/350x450.png" alt="" loading="lazy">
+        <div>
+            <h3>Titulo de ejemplo</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, ullam ea voluptatum beatae modi nisi sunt, mollitia assumenda blanditiis reprehenderit molestiae magni eaque earum nostrum eos qui aperiam cum id totam ipsa perferendis corrupti vero! Sed eos vitae et suscipit dolorum deleniti reprehenderit quibusdam tempore ex repellendus nobis voluptatum rem iure delectus quasi excepturi dignissimos dolore, enim porro aliquid eligendi. Sed quidem eius recusandae ipsa quisquam, dolor rem veritatis optio minima ab ullam dolores sequi veniam, doloremque nostrum esse? Laudantium?</p>
+        </div>
+    </div>  
+</section>
+<section class="collab">
+    <div class="width-container">
+       <h3>COLABORACIONES</h3>
+        <div class="logos">
+            <img src="media/colaboraciones_img/visa-logo-black.webp" alt="" loading="lazy">
+            <img src="media/colaboraciones_img/Nike-logo-png-white.webp" alt="" loading="lazy">
+            <img src="media/colaboraciones_img/puma-logo-black.png" alt="" loading="lazy">
+            <img src="media/colaboraciones_img/zara-logo-white.webp" alt="" loading="lazy">
+        </div>  
+    </div>
+   
+</section>
+</body>
+<script>
+    const navSticky = document.querySelector("nav");
+    let lastScrollPosition = window.scrollY;
+
+function navScroll() {
+    const currentScrollPosition = window.scrollY;
+
+    if (currentScrollPosition > lastScrollPosition) {
+        navSticky.classList.add("hidden");
+    } else {
+        navSticky.classList.remove("hidden");
+    }
+    lastScrollPosition = currentScrollPosition;
+}
+
+window.addEventListener("scroll", prueba);
+</script>
