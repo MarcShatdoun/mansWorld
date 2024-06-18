@@ -68,22 +68,52 @@
         <img src="media/img/350x450.png" alt="" loading="lazy">
         <div>
             <h3>Titulo de ejemplo</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, ullam ea voluptatum beatae modi nisi sunt, mollitia assumenda blanditiis reprehenderit molestiae magni eaque earum nostrum eos qui aperiam cum id totam ipsa perferendis corrupti vero! Sed eos vitae et suscipit dolorum deleniti reprehenderit quibusdam tempore ex repellendus nobis voluptatum rem iure delectus quasi excepturi dignissimos dolore, enim porro aliquid eligendi. Sed quidem eius recusandae ipsa quisquam, dolor rem veritatis optio minima ab ullam dolores sequi veniam, doloremque nostrum esse? Laudantium?</p>
-        </div>
-    </div>  
-</section>
-<section class="collab">
-    <div class="width-container">
-       <h3>COLABORACIONES</h3>
-        <div class="logos">
-            <img src="media/colaboraciones_img/visa-logo-black.webp" alt="" loading="lazy">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, ullam ea voluptatum beatae modi nisi sunt, mollitia assumenda blanditiis rgiebp" alt="" loading="lazy">
             <img src="media/colaboraciones_img/Nike-logo-png-white.webp" alt="" loading="lazy">
             <img src="media/colaboraciones_img/puma-logo-black.png" alt="" loading="lazy">
             <img src="media/colaboraciones_img/zara-logo-white.webp" alt="" loading="lazy">
         </div>  
     </div>
-   
 </section>
+<section class="width-container" id="opinion">
+    <h2>Que opinan nuestros clientes</h2>
+    <div class="content-grid-2">
+        <article class="opinion">
+            <img src="media/icon/user-icon.svg" alt="">
+            <div>
+                <h4><%# usuario.nombre %> Carolina Martinez<%# usuario.apellido %></h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab cum iusto hic. Quaerat eius voluptates aliquid id accusantium quidem? Quasi.</p>
+            </div>
+        </article>
+
+        <article class="opinion">
+            <img src="media/icon/user-icon.svg" alt="">
+            <div>
+                <h4>Nombre Apellido</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab cum iusto hic. Quaerat eius voluptates aliquid id accusantium quidem? Quasi.</p>
+            </div>
+        </article>
+        
+        <article class="opinion">
+            <img src="media/icon/user-icon.svg" alt="">
+            <div>
+                <h4>Nombre Apellido</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab cum iusto hic. Quaerat eius voluptates aliquid id accusantium quidem? Quasi.</p>
+            </div>
+        </article>
+
+        <article class="opinion">
+            <img src="media/icon/user-icon.svg" alt="">
+            <div>
+                <h4>Nombre Apellido</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab cum iusto hic. Quaerat eius voluptates aliquid id accusantium quidem? Quasi.</p>
+            </div>
+        </article>
+    </div>
+</section>
+<%- include('templates/footer') %>
+
+
 </body>
 <script>
     const navSticky = document.querySelector("nav");
@@ -100,5 +130,5 @@ function navScroll() {
     lastScrollPosition = currentScrollPosition;
 }
 
-window.addEventListener("scroll", prueba);
+window.addEventListener("scroll", navScroll);
 </script>
